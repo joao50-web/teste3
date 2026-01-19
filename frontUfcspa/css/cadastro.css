@@ -12,7 +12,7 @@ body {
 /* ===== BOTÃO VOLTAR / SAIR ===== */
 #voltar {
   position: static; 
-  padding: 8px 16px;
+  padding: 8px 6px;
   font-size: 13px;
   background-color: #8f4b4b;
   color: #ffffff;
@@ -28,8 +28,8 @@ body {
 /* ===== CONTAINER ===== */
 .container {
   max-width: 1200px;
-  min-height: 480px;
-  margin: 40px auto;
+  min-height: 680px;
+  margin: 0px auto;
   background: #7f96a9; /* azul acinzentado da grade */
   padding: 0px;
   border-radius: 10px;
@@ -85,7 +85,7 @@ body {
 .card {
   border: 1px solid #cfd6e3;
   border-radius: 14px;
-  padding: 75px;
+  padding: 175px;
   background-color: #f9fbfd;
 }
 
