@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #093e5e; /* mesmo fundo da grade */
+  margin: 0;
+  padding: 0px;
+}
+
+/* ===== BOTÃO VOLTAR / SAIR ===== */
+#voltar {
+  position: static; 
+  padding: 8px 16px;
+  font-size: 13px;
+  background-color: #8f4b4b;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#voltar:hover {
+  background-color: #7d3f3f;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 1200px;
+  min-height: 480px;
+  margin: 40px auto;
+  background: #7f96a9; /* azul acinzentado da grade */
+  padding: 0px;
+  border-radius: 10px;
+  box-shadow: 0 10px 28px rgba(0,0,0,.18);
+}
+
+/* ===== CABEÇALHO ===== */
+.cabecalho {
+  border: 1px solid #cfd6e3;
+  border-radius: 1px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.linha-titulo {
+  background: #ccaf7c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 10px 16px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.linha-subtitulo {
+  padding: 8px;
+  text-align: center;
+  background-color: #c3d6e9; /* azul claro da grade */
+  border-top: 1px solid #d6dbea;
+}
+
+/* ===== ABAS ===== */
+.abas {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 14px;
+}
+
+.abas button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #dff3f7; /* azul muito claro */
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.abas .ativa {
+  background-color: #3f7f6b; /* verde padrão da grade */
+  color: #ffffff;
+}
+
+/* ===== CARD ===== */
+.card {
+  border: 1px solid #cfd6e3;
+  border-radius: 14px;
+  padding: 75px;
+  background-color: #f9fbfd;
+}
+
+.card h3 {
+  margin-bottom: 12px;
+  color: #093e5e;
+}
+
+/* ===== GRID FORMULÁRIO ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 13px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  color: #093e5e;
+}
+
+/* ===== INPUTS ===== */
+input,
+select,
+textarea {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #c1c8d4;
+  background-color: #ffffff;
+}
+
+
+
+/* ===== BOTÕES ===== */
+.botao {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 14px;
+}
+
+.botao button {
+  padding: 10px 6px;
+  border-radius: 10px;
+  border: none;
+  background-color: #3f7f6b; /* mesmo verde da grade */
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.botao button:hover {
+  background-color: #356e5d;
+  transform: translateY(-1px);
+}
+
+/* ===== OCULTO ===== */
+.oculto {
+  display: none;
+}
+
+.botao {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 14px;
+}
+
+.botao button {
+  padding: 10px 6px;
+  border-radius: 10px;
+  border: none;
+  background-color: #3f7f6b;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.botao button:hover {
+  background-color: #356e5d;
+  transform: translateY(-1px);
+}
