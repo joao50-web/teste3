@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Grade Horária</title>
+    <link rel="stylesheet" href="css/grade.css">
+</head>
+
+<body>
+
+    <button id="sair" onclick="logout()">Sair</button>
+
+    <div class="container">
+
+
+
+        <div class="cabecalho">
+            <div class="linha-titulo">
+                UNIVERSIDADE FEDERAL DE CIÊNCIAS DA SAÚDE DE PORTO ALEGRE
+            </div>
+
+
+            <div class="linha-info grid-2 fundo-topo">
+                <div class="campo">
+                    <strong>CURSO:</strong>
+                    <select id="curso" onchange="salvarTopo()">
+                        <option value="">Selecione</option>
+                        <option>Informática Biomédica</option>
+                        <option>Medicina</option>
+                        <option>Física Médica</option>
+                        <option>Fisioterapia</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <strong>CURRÍCULO:</strong>
+                    <select id="curriculo" onchange="salvarTopo()">
+                        <option>2023</option>
+                        <option>2022</option>
+                    </select>
+
+                    <div class="acoes-topo">
+                        <button onclick="irCadastro()">Gerenciar Cursos e Disciplinas</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="linha-info grid-3 fundo-topo">
+                <div class="campo">
+                    <strong>COORDENADOR(A):</strong>
+                    <select id="coordenador" onchange="salvarTopo()">
+                        <option value="">Selecione</option>
+                        <option>Dra. Ana Ribeiro</option>
+                        <option>Dr. Carlos Mendes</option>
+                        <option>Dra. Paula Nogueira</option>
+                        <option>Dr. João Silva</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <strong>ANO:</strong>
+                    <select id="ano" onchange="salvarTopo()">
+                        <option>2026/1</option>
+                        <option>2025/2</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <strong>SEMESTRE:</strong>
+                    <select id="semestre" onchange="salvarTopo()">
+                        <option>1º</option>
+                        <option>2º</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabela-wrapper">
+            <table id="grade">
+                <thead>
+                    <tr>
+                        <th class="fixo">Horário</th>
+                        <th>2ª</th>
+                        <th>3ª</th>
+                        <th>4ª</th>
+                        <th>5ª</th>
+                        <th>6ª</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="fixo">13:20–14:10</td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                    </tr>
+                    <!-- Repete os horários -->
+                    <tr>
+                        <td class="fixo">14:10–15:00</td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                    </tr>
+                    <tr>
+                        <td class="fixo">15:00–15:50</td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                    </tr>
+                    <tr>
+                        <td class="fixo">15:50–16:40</td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                    </tr>
+                    <tr>
+                        <td class="fixo">16:40–17:30</td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                    </tr>
+                    <tr>
+                        <td class="fixo">17:30–18:20</td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                    </tr>
+                    <tr>
+                        <td class="fixo">18:20–19:10</td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                    </tr>
+                    <tr>
+                        <td class="fixo">19:10–20:00</td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                    </tr>
+                    <tr>
+                        <td class="fixo">20:00–20:50</td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                    </tr>
+                    <tr>
+                        <td class="fixo">20:50–21:40</td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                    </tr>
+                    <tr>
+                        <td class="fixo">21:40–22:30</td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                        <td contenteditable></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="botoes">
+            <button onclick="salvar()">Salvar alterações</button>
+        </div>
+
+    </div>
+
+    <script src="js/grade.js"></script>
+</body>
+
+</html>

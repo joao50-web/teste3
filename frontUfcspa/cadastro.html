@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro Acadêmico</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+
+<body>
+
+    <button id="voltar" onclick="voltar()">Voltar</button>
+
+    <div class="container">
+
+        <div class="cabecalho">
+            <div class="linha-titulo">
+                UNIVERSIDADE FEDERAL DE CIÊNCIAS DA SAÚDE DE PORTO ALEGRE
+            </div>
+            <div class="linha-subtitulo fundo-topo">
+                Gerenciamento de Cursos e Disciplinas
+            </div>
+        </div>
+
+        <!-- ABAS -->
+        <div class="abas">
+            <button class="ativa" onclick="mostrarCursos()">Cursos</button>
+            <button onclick="mostrarDisciplinas()">Disciplinas</button>
+        </div>
+
+        <!-- ===== FORM CURSO ===== -->
+        <div id="formCurso" class="card">
+            <h3>Cadastrar Novo Curso</h3>
+
+            <div class="grid">
+                <div class="campo">
+                    <label>Código *</label>
+                    <input id="cursoCodigo" placeholder="Ex: MED001">
+                </div>
+
+                <div class="campo">
+                    <label>Nome do Curso *</label>
+                    <input id="cursoNome" placeholder="Ex: Medicina">
+                </div>
+
+                <div class="campo">
+                    <label>Coordenador(a)</label>
+                    <input id="cursoCoordenador" placeholder="Nome do coordenador">
+                </div>
+
+                <div class="campo">
+                    <label>Turno</label>
+                    <select id="cursoTurno">
+                        <option value="">Selecione</option>
+                        <option>Matutino</option>
+                        <option>Vespertino</option>
+                        <option>Noturno</option>
+                        <option>Integral</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label>Duração (semestres)</label>
+                    <input type="number" id="cursoDuracao" placeholder="Ex: 12">
+                </div>
+
+                <div class="campo botao">
+                    <button onclick="salvarCurso()">Adicionar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== FORM DISCIPLINA ===== -->
+        <div id="formDisciplina" class="card oculto">
+            <h3>Cadastrar Nova Disciplina</h3>
+
+            <div class="grid">
+                <div class="campo">
+                    <label>Código *</label>
+                    <input id="discCodigo" placeholder="Ex: ANA101">
+                </div>
+
+                <div class="campo">
+                    <label>Nome da Disciplina *</label>
+                    <input id="discNome" placeholder="Ex: Anatomia Humana I">
+                </div>
+
+                <div class="campo">
+                    <label>Curso</label>
+                    <select id="discCurso"></select>
+                </div>
+
+                <div class="campo">
+                    <label>Carga Horária</label>
+                    <input type="number" id="discCarga" placeholder="Ex: 60">
+                </div>
+
+                <div class="campo">
+                    <label>Créditos</label>
+                    <input type="number" id="discCreditos" placeholder="Ex: 4">
+                </div>
+
+                <div class="campo">
+                    <label>Semestre</label>
+                    <select id="discSemestre">
+                        <option value="">Selecione</option>
+                        <script>
+                            for (let i = 1; i <= 12; i++) {
+                                document.write(`<option>${i}º Semestre</option>`)
+                            }
+                        </script>
+                    </select>
+                </div>
+
+                <div class="campo botao">
+                    <button onclick="salvarDisciplina()">Adicionar</button>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="js/cadastro.js"></script>
+</body>
+
+</html>
