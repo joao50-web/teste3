@@ -11,16 +11,18 @@ body {
 
 /* ===== BOTÃO VOLTAR / SAIR ===== */
 #voltar {
-  position: fixed;
-  top: 16px;
-  right: 18px;
+  position: static; 
   padding: 8px 16px;
   font-size: 13px;
-  background-color: #8f4b4b; /* vermelho da grade */
+  background-color: #8f4b4b;
   color: #ffffff;
   border: none;
   border-radius: 10px;
   cursor: pointer;
+}
+
+#voltar:hover {
+  background-color: #7d3f3f;
 }
 
 /* ===== CONTAINER ===== */
@@ -43,13 +45,14 @@ body {
 }
 
 .linha-titulo {
-  background: #ccaf7c; /* bege da grade */
-  padding: 10px;
+  background: #ccaf7c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 10px 16px;
   font-weight: bold;
   font-size: 18px;
-  text-align: center;
 }
-
 .linha-subtitulo {
   padding: 8px;
   text-align: center;
