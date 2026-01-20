@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade Horária</title>
+    <link rel="stylesheet" href="css/grade.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- CABEÇALHO -->
+    <div class="cabecalho">
+        <div class="linha-titulo">
+            UNIVERSIDADE FEDERAL DE CIÊNCIAS DA SAÚDE DE PORTO ALEGRE
+            <button id="sair" onclick="logout()">Sair</button>
+        </div>
+
+        <div class="linha-info grid-2 fundo-topo">
+            <div class="campo">
+                <strong>CURSO:</strong>
+                <select id="curso">
+                    <option value="">Selecione</option>
+                    <option>Informática Biomédica</option>
+                    <option>Medicina</option>
+                    <option>Física Médica</option>
+                    <option>Fisioterapia</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <strong>CURRÍCULO:</strong>
+                <select id="curriculo">
+                    <option>2023</option>
+                    <option>2022</option>
+                </select>
+                <div class="acoes-topo">
+                    <button onclick="irCadastro()">Cadastro Academico</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="linha-info grid-3 fundo-topo">
+            <div class="campo">
+                <strong>COORDENADOR(A):</strong>
+                <select id="coordenador">
+                    <option value="">Selecione</option>
+                    <option>Dra. Ana Ribeiro</option>
+                    <option>Dr. Carlos Mendes</option>
+                    <option>Dra. Paula Nogueira</option>
+                    <option>Dr. João Silva</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <strong>ANO:</strong>
+                <select id="ano">
+                    <option>2026/1</option>
+                    <option>2025/2</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <strong>SEMESTRE:</strong>
+                <select id="semestre">
+                    <option>1º</option>
+                    <option>2º</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- TABELA -->
+    <div class="tabela-wrapper">
+        <table id="grade">
+            <thead>
+                <tr>
+                    <th class="fixo">Horário</th>
+                    <th>2ª</th>
+                    <th>3ª</th>
+                    <th>4ª</th>
+                    <th>5ª</th>
+                    <th>6ª</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="fixo">
+                        <select class="select-horario"></select>
+                    </td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                </tr>
+                <tr>
+                    <td class="fixo">
+                        <select class="select-horario"></select>
+                    </td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                </tr>
+                <tr>
+                    <td class="fixo">
+                        <select class="select-horario"></select>
+                    </td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                </tr>
+                <tr>
+                    <td class="fixo">
+                        <select class="select-horario"></select>
+                    </td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                </tr>
+                <tr>
+                    <td class="fixo">
+                        <select class="select-horario"></select>
+                    </td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                </tr>
+                <tr>
+                    <td class="fixo">
+                        <select class="select-horario"></select>
+                    </td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                </tr>
+                <tr>
+                    <td class="fixo">
+                        <select class="select-horario"></select>
+                    </td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                </tr>
+                <tr>
+                    <td class="fixo">
+                        <select class="select-horario"></select>
+                    </td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                </tr>
+                <tr>
+                    <td class="fixo">
+                        <select class="select-horario"></select>
+                    </td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                </tr>
+                <tr>
+                    <td class="fixo">
+                        <select class="select-horario"></select>
+                    </td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                </tr>
+                <tr>
+                    <td class="fixo">
+                        <select class="select-horario"></select>
+                    </td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                    <td contenteditable></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="botoes">
+        <button onclick="salvar()">Salvar alterações</button>
+    </div>
+
+</div>
+
+<script src="js/grade.js"></script>
+</body>
+</html>
